@@ -16,3 +16,6 @@ https://www.figma.com/file/73J8Os8gcn3VXOAcFFzo0G/Untitled?type=design&node-id=0
 ![Layout of the app](wireframes/Wireframe1.jpg)
 ![Updated Layout of the app](wireframes/Wireframe2.jpg)
 ![Updated Layout of the app](wireframes/Wireframe3.jpg)
+
+*_*Sources*_*
+Used the Schools of Magic from https://dribbble.com/shots/3836841-DnD-Schools-of-Magic#shot-description as images

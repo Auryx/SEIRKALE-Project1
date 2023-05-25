@@ -38,11 +38,10 @@ $Search.on('submit', (event) => {
 
     $.ajax(spellAPI)
         .then(response => {
-            console.log(response)
             return response.json();
         })
         .then((data) => {
-            $img.html(`<img src=./imgs.${data.school.Name}>`)
+            $img.html(`<img src=./magic/${data.school.Name}.jpg>`)
             console.log(data.school.Name)
         })
 })
