@@ -1,0 +1,31 @@
+.container {
+    background-color: #D9D9D9;
+    height: 950px;
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    background-color: #EC1D1D;
+    height: 60px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox{
+    background-color: #2FBDDC;
+    height: 45px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigCard{
+    background-color: #16A066;
+    height: 350px;
+    width: 560px;
+}
