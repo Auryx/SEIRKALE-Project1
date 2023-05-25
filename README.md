@@ -1,5 +1,4 @@
-# SEIRKALE-Project1
-SpellHelp Web App
+# SpellHelp Web App
 
 SpellHelp is a web app that provides users with descriptions of the many different spells of Dungeons and Dragons 5th Edition. The app utilizes the DnD API provided at https://www.dnd5eapi.co/ to gather up to date data on the numerous spells in 5th Edition. 
 
