@@ -13,6 +13,6 @@ SpellHelp is a web app that provides users with descriptions of the many differe
 
 *_*Wireframes*_*
 https://www.figma.com/file/73J8Os8gcn3VXOAcFFzo0G/Untitled?type=design&node-id=0%3A1&t=idCesMrQashBf6dt-1
-![Layout of the app](imgs/Wireframe1.jpg)
-![Updated Layout of the app](imgs/Wireframe2.jpg)
-![Updated Layout of the app](imgs/Wireframe3.jpg)
+![Layout of the app](wireframes/Wireframe1.jpg)
+![Updated Layout of the app](wireframes/Wireframe2.jpg)
+![Updated Layout of the app](wireframes/Wireframe3.jpg)
