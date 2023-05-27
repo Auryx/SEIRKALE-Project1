@@ -17,7 +17,7 @@ $Search.on('submit', (event) => {
     console.log(spell);
 
     //api
-    const spellAPI = `https://www.dnd5eapi.co/api/spells/${spell.toLowerCase().replace(' ', '-')}`
+    const spellAPI = `https://www.dnd5eapi.co/api/spells/${spell.toLowerCase().replace(' ', '-').replace(' ', '-')}`
     console.log(spellAPI);
     // declare
     const $img = $(".spellSchoolImg");
@@ -27,6 +27,7 @@ $Search.on('submit', (event) => {
     const $upcastingRes = $("#upcastingRes");
     const $spellComRes = $("#spellComRes");
     const $spellMatRes = $("#spellMatRes");
+    const $spellSchoolRes = $("#spellSchoolRes")
 
     // clear results
     $img.empty();
@@ -36,10 +37,12 @@ $Search.on('submit', (event) => {
     $upcastingRes.empty();
     $spellComRes.empty();
     $spellMatRes.empty();
+    $spellSchoolRes.empty();
     $spellDesRes.html(`<div>Loading...</div>`);
 
     $.ajax(spellAPI)
         .then((data) => {
+            $spellSchoolRes.html(`<div>${data.school.name}</div>`)
             $img.html(`<img src=./magic/${data.school.name}.jpg>`);
             $spellNameRes.html(`<div>${data.name}</div>`)
             $spellDesRes.html(`<div>${data.desc}</div>`)
@@ -49,5 +52,10 @@ $Search.on('submit', (event) => {
                 $spellLvlRes.html(`<div>This spell is a cantrip!</div>`)}
             $upcastingRes.html(`<div>${data.higher_level}</div>`)
             $spellComRes.html(`<div>${data.components}</div>`)
-            $spellMatRes.html(`<div>${data.material}</div>`)
+            console.log(data.material)
+            if (data.material != undefined){
+                $spellMatRes.html(`<div>${data.material}</div>`)
+            } else {
+                $spellMatRes.html(`<div>This spell has no material components</div>`)
+            }
 })})
