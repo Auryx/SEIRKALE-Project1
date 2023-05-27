@@ -17,7 +17,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black
 }
 .searchBox{
     height: 45px;
@@ -26,9 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
-    border-right: 5px solid black;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    border: 3px solid black;
 }
 .bigCard{
     height: 350px;
@@ -42,7 +39,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid black
+    border-bottom: 3px solid black
 }
 .spellDesRes{
     height: 250px;
@@ -70,23 +67,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid black
+    border-bottom: 3px solid black
 }
 .spellContent1{
-    height: 115px;
+    height: 25px;
     width: 174px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .spellContent2{
-    height: 115px;
+    height: 225px;
     width: 174px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .spellSchoolImg{
     height: 250px;

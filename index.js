@@ -44,18 +44,18 @@ $Search.on('submit', (event) => {
         .then((data) => {
             $spellSchoolRes.html(`<div>${data.school.name}</div>`)
             $img.html(`<img src=./magic/${data.school.name}.jpg>`);
-            $spellNameRes.html(`<div>${data.name}</div>`)
-            $spellDesRes.html(`<div>${data.desc}</div>`)
+            $spellNameRes.html(`<div class="spellNameRes">${data.name}</div>`)
+            $spellDesRes.html(`<div class="spellDesRes">${data.desc}</div>`)
             if (data.level > 0){
-                $spellLvlRes.html(`<div>Level ${data.level} Spell</div>`)
+                $spellLvlRes.html(`<div class="spellContent1" id="spellLvlRes">Level ${data.level} Spell</div>`)
             }else{
-                $spellLvlRes.html(`<div>This spell is a cantrip!</div>`)}
-            $upcastingRes.html(`<div>${data.higher_level}</div>`)
-            $spellComRes.html(`<div>${data.components}</div>`)
+                $spellLvlRes.html(`<div class="spellContent1" id="spellLvlRes">This spell is a cantrip!</div>`)}
+            $upcastingRes.html(`<div class="spellContent2" id="upcastingRes">${data.higher_level}</div>`)
+            $spellComRes.html(`<div class="spellContent1" id="spellComRes">${data.components}</div>`)
             console.log(data.material)
             if (data.material != undefined){
-                $spellMatRes.html(`<div>${data.material}</div>`)
+                $spellMatRes.html(`<div class="spellContent2" id="spellMatRes">${data.material}</div>`)
             } else {
-                $spellMatRes.html(`<div>This spell has no material components</div>`)
+                $spellMatRes.html(`<div class="spellContent2" id="spellMatRes">This spell has no material components</div>`)
             }
 })})
