@@ -19,3 +19,4 @@ https://www.figma.com/file/73J8Os8gcn3VXOAcFFzo0G/Untitled?type=design&node-id=0
 
 *_*Sources*_*
 Used the Schools of Magic from https://dribbble.com/shots/3836841-DnD-Schools-of-Magic#shot-description as images
+Used the D20 from https://thenounproject.com/browse/icons/term/dnd/ as the icon

@@ -37,12 +37,12 @@ $Search.on('submit', (event) => {
     $upcastingRes.empty();
     $spellComRes.empty();
     $spellMatRes.empty();
-    $spellSchoolRes.empty();
+    // $spellSchoolRes.empty();
     $spellDesRes.html(`<div>Loading...</div>`);
 
     $.ajax(spellAPI)
         .then((data) => {
-            $spellSchoolRes.html(`<div>${data.school.name}</div>`)
+            // $spellSchoolRes.html(`<div>${data.school.name}</div>`)
             $img.html(`<img src=./magic/${data.school.name}.jpg>`);
             $spellNameRes.html(`<div class="spellNameRes">${data.name}</div>`)
             $spellDesRes.html(`<div class="spellDesRes">${data.desc}</div>`)
