@@ -2,6 +2,9 @@
 
 SpellHelp is a web app that provides users with descriptions of the many different spells of Dungeons and Dragons 5th Edition. The app utilizes the DnD API provided at https://www.dnd5eapi.co/ to gather up to date data on the numerous spells in 5th Edition. 
 
+**Technical Description**
+
+By utilizing the $.ajax command, attempt to modify the called URL with the input from a form in the HTML. After receiving the .json file from the database, display the relevant information to the user in a text format.
 ## **Features:**
 
 |Feature|Description|
