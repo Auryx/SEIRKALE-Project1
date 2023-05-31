@@ -89,6 +89,9 @@ body{
     height: 250px;
     width: 174px;
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;

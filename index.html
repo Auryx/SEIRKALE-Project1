@@ -15,6 +15,11 @@
         <div class="title"><h1>SpellHelp</h1></div>
         <div class="searchBox">
             <form class="search">
+                <select name="dropDown">
+                    <option value="spells">Spells</option>  
+                    <option value="classes">Classes</option> 
+                    <option value="races">Races</option>
+                </select>
                 <input type="text" name="spell" placeholder="Type your spell here">
                 <input type="submit" value="Search">
             </form>
@@ -25,7 +30,7 @@
         </div>
         <div class="additions">
             <div class="smallCard">
-                <div class="subTitle">Spell Level</div>
+                <div class="subTitle" id="leftBox">Spell Level</div>
                 <div class="spellContent1" id="spellLvlRes"></div>
                 <div class="spellContent2" id="upcastingRes"></div>
             </div>
@@ -35,7 +40,7 @@
                 <!-- where the image will be displayed -->
             </div>
             <div class="smallCard">
-                <div class="subTitle">Spell Components</div>
+                <div class="subTitle" id="rightBox">Spell Components</div>
                 <div class="spellContent1" id="spellComRes"></div>
                 <div class="spellContent2" id="spellMatRes"></div>
             </div>
