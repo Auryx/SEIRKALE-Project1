@@ -1,9 +1,14 @@
 # SpellHelp Web App
-
 SpellHelp is a web app that provides users with descriptions of the many different spells of Dungeons and Dragons 5th Edition. The app utilizes the DnD API provided at https://www.dnd5eapi.co/ to gather up to date data on the numerous spells in 5th Edition. 
 
-**Technical Description**
+*Link to live site:*  <br> 
+https://auryx-project1-spellhelp.onrender.com/
 
+**Technologies and Technical Description** <br> 
+*Technologies* <br> 
+DnD 5e API, HTML, CSS, Javascript, jQuery, & Render  <br> 
+
+*Technical Description* <br> 
 By utilizing the $.ajax command, attempt to modify the called URL with the input from a form in the HTML. After receiving the .json file from the database, display the relevant information to the user in a text format.
 ## **Features:**
 
@@ -14,14 +19,17 @@ By utilizing the $.ajax command, attempt to modify the called URL with the input
 |Level|Users will be able to view the level of the spell.|
 |Components and Materials|Users will be able to view the Verbal, Somatic, and Material components of the spell.|
 
-*_*Wireframes*_*
-https://www.figma.com/file/73J8Os8gcn3VXOAcFFzo0G/Untitled?type=design&node-id=0%3A1&t=idCesMrQashBf6dt-1
+*_*Wireframes*_* <br> 
+https://www.figma.com/file/73J8Os8gcn3VXOAcFFzo0G/Untitled?type=design&node-id=0%3A1&t=idCesMrQashBf6dt-1<br>
+Initial Layout
 ![Layout of the app](wireframes/Wireframe1.jpg)
+Updated Layout
 ![Updated Layout of the app](wireframes/Wireframe2.jpg)
+Final Layout
 ![Updated Layout of the app](wireframes/Wireframe3.jpg)
 
 *_*Sources*_*
-Used the Schools of Magic from https://dribbble.com/shots/3836841-DnD-Schools-of-Magic#shot-description as images
+Used the Schools of Magic from https://dribbble.com/shots/3836841-DnD-Schools-of-Magic#shot-description as images<br> 
 Used the D20 from https://thenounproject.com/browse/icons/term/dnd/ as the icon
 
 ## *_*Beyond the MVP*_*
@@ -40,3 +48,10 @@ On the branch *dropdownMenuTesting*, the following features were added for testi
 |Languages|Users will be able to view what Languages the race they have selected natively has.|
 |Default Alignment|Users will be able to view a description of the selected race's Default Alignment.|
 |Size|Users will be able to view a description of their race's weight and height, as well as the in-game size statistic.|
+
+
+## *_*Improvements to be made*_*
++ Further optimization for mobile users
++ Certain spell's description is too long for the current format. *Ex: Teleport*. Look for text wrapping/scrollable box? 
++ Error Modal for when API call fails
++ + Attempted with onerror(), .catch()
